@@ -1,0 +1,9 @@
+---
+- hosts: localhost
+  connection: local
+  gather_facts: no
+  roles:
+    - aws-vpc
+    - aws-ec2sg
+    - aws-ec2key
+    - aws-ec2instance
